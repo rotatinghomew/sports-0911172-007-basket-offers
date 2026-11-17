@@ -1,0 +1,5774 @@
+[
+  [
+    "inventory.stock",
+    {
+      "id": "sku0",
+      "count": 1000,
+      "cost": 1000,
+      "price": 3000
+    }
+  ],
+  [
+    "inventory.stock",
+    {
+      "id": "sku1",
+      "count": 1000,
+      "cost": 1100,
+      "price": 3300
+    }
+  ],
+  [
+    "inventory.stock",
+    {
+      "id": "sku2",
+      "count": 1000,
+      "cost": 1200,
+      "price": 3600
+    }
+  ],
+  [
+    "inventory.stock",
+    {
+      "id": "sku3",
+      "count": 1000,
+      "cost": 1300,
+      "price": 3900
+    }
+  ],
+  [
+    "inventory.stock",
+    {
+      "id": "sku4",
+      "count": 1000,
+      "cost": 1400,
+      "price": 4200
+    }
+  ],
+  [
+    "inventory.stock",
+    {
+      "id": "sku5",
+      "count": 1000,
+      "cost": 1500,
+      "price": 4500
+    }
+  ],
+  [
+    "inventory.stock",
+    {
+      "id": "sku6",
+      "count": 1000,
+      "cost": 1600,
+      "price": 4800
+    }
+  ],
+  [
+    "inventory.stock",
+    {
+      "id": "sku7",
+      "count": 1000,
+      "cost": 1700,
+      "price": 5100
+    }
+  ],
+  [
+    "inventory.stock",
+    {
+      "id": "sku8",
+      "count": 1000,
+      "cost": 1800,
+      "price": 5400
+    }
+  ],
+  [
+    "inventory.stock",
+    {
+      "id": "sku9",
+      "count": 1000,
+      "cost": 1900,
+      "price": 5700
+    }
+  ],
+  [
+    "inventory.stock",
+    {
+      "id": "sku10",
+      "count": 1000,
+      "cost": 2000,
+      "price": 6000
+    }
+  ],
+  [
+    "inventory.stock",
+    {
+      "id": "sku11",
+      "count": 1000,
+      "cost": 2100,
+      "price": 6300
+    }
+  ],
+  [
+    "offers.create",
+    {
+      "id": "bundle",
+      "items": [
+        "sku0",
+        "sku1"
+      ],
+      "discount": 500,
+      "min_margin": 1000
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b0",
+      "offer": "bundle",
+      "person": "p0",
+      "at": "2026-07-01"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b1",
+      "purchase": "purchase0",
+      "person": "p0",
+      "at": "2026-07-01",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b2",
+      "purchase": "purchase1",
+      "person": "p1",
+      "at": "2026-07-02",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b3",
+      "purchase": "purchase1",
+      "person": "p1",
+      "at": "2026-07-02",
+      "items": {
+        "sku3": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b4",
+      "purchase": "purchase2",
+      "person": "p2",
+      "at": "2026-07-03",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b5",
+      "purchase": "purchase2",
+      "person": "p2",
+      "at": "2026-07-03",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b6",
+      "purchase": "purchase3",
+      "person": "p3",
+      "at": "2026-07-04",
+      "items": {
+        "sku6": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b7",
+      "purchase": "purchase3",
+      "person": "p3",
+      "at": "2026-07-04",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku7"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b8",
+      "purchase": "purchase4",
+      "person": "p4",
+      "at": "2026-07-05",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r8",
+      "basket": "b8",
+      "product": "sku8",
+      "count": 1,
+      "at": "2026-07-10"
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b9",
+      "offer": "bundle",
+      "person": "p9",
+      "at": "2026-07-10"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b10",
+      "purchase": "purchase5",
+      "person": "p5",
+      "at": "2026-07-06",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b11",
+      "purchase": "purchase5",
+      "person": "p5",
+      "at": "2026-07-06",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b12",
+      "purchase": "purchase6",
+      "person": "p6",
+      "at": "2026-07-07",
+      "items": {
+        "sku0": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b13",
+      "purchase": "purchase6",
+      "person": "p6",
+      "at": "2026-07-07",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b14",
+      "purchase": "purchase7",
+      "person": "p7",
+      "at": "2026-07-08",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku2"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b15",
+      "purchase": "purchase7",
+      "person": "p7",
+      "at": "2026-07-08",
+      "items": {
+        "sku3": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b16",
+      "purchase": "purchase8",
+      "person": "p8",
+      "at": "2026-07-09",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r16",
+      "basket": "b16",
+      "product": "sku4",
+      "count": 1,
+      "at": "2026-07-14"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b17",
+      "purchase": "purchase8",
+      "person": "p8",
+      "at": "2026-07-09",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b18",
+      "offer": "bundle",
+      "person": "p18",
+      "at": "2026-07-19"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b19",
+      "purchase": "purchase9",
+      "person": "p9",
+      "at": "2026-07-10",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b20",
+      "purchase": "purchase10",
+      "person": "p10",
+      "at": "2026-07-11",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b21",
+      "purchase": "purchase10",
+      "person": "p10",
+      "at": "2026-07-11",
+      "items": {
+        "sku9": 1,
+        "sku11": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku9"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b22",
+      "purchase": "purchase11",
+      "person": "p11",
+      "at": "2026-07-12",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b23",
+      "purchase": "purchase11",
+      "person": "p11",
+      "at": "2026-07-12",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b24",
+      "purchase": "purchase12",
+      "person": "p12",
+      "at": "2026-07-13",
+      "items": {
+        "sku0": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r24",
+      "basket": "b24",
+      "product": "sku0",
+      "count": 1,
+      "at": "2026-07-18"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b25",
+      "purchase": "purchase12",
+      "person": "p12",
+      "at": "2026-07-13",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b26",
+      "purchase": "purchase13",
+      "person": "p13",
+      "at": "2026-07-14",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b27",
+      "offer": "bundle",
+      "person": "p27",
+      "at": "2026-07-28"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b28",
+      "purchase": "purchase14",
+      "person": "p14",
+      "at": "2026-07-15",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku4"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b29",
+      "purchase": "purchase14",
+      "person": "p14",
+      "at": "2026-07-15",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b30",
+      "purchase": "purchase15",
+      "person": "p15",
+      "at": "2026-07-16",
+      "items": {
+        "sku6": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b31",
+      "purchase": "purchase15",
+      "person": "p15",
+      "at": "2026-07-16",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b32",
+      "purchase": "purchase16",
+      "person": "p16",
+      "at": "2026-07-17",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r32",
+      "basket": "b32",
+      "product": "sku8",
+      "count": 1,
+      "at": "2026-07-22"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b33",
+      "purchase": "purchase16",
+      "person": "p16",
+      "at": "2026-07-17",
+      "items": {
+        "sku9": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b34",
+      "purchase": "purchase17",
+      "person": "p17",
+      "at": "2026-07-18",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b35",
+      "purchase": "purchase17",
+      "person": "p17",
+      "at": "2026-07-18",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku11"
+      ]
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b36",
+      "offer": "bundle",
+      "person": "p36",
+      "at": "2026-08-06"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b37",
+      "purchase": "purchase18",
+      "person": "p18",
+      "at": "2026-07-19",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b38",
+      "purchase": "purchase19",
+      "person": "p19",
+      "at": "2026-07-20",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b39",
+      "purchase": "purchase19",
+      "person": "p19",
+      "at": "2026-07-20",
+      "items": {
+        "sku3": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b40",
+      "purchase": "purchase20",
+      "person": "p20",
+      "at": "2026-07-21",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r40",
+      "basket": "b40",
+      "product": "sku4",
+      "count": 1,
+      "at": "2026-07-26"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b41",
+      "purchase": "purchase20",
+      "person": "p20",
+      "at": "2026-07-21",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b42",
+      "purchase": "purchase21",
+      "person": "p21",
+      "at": "2026-07-22",
+      "items": {
+        "sku6": 1,
+        "sku9": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku6"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b43",
+      "purchase": "purchase21",
+      "person": "p21",
+      "at": "2026-07-22",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b44",
+      "purchase": "purchase22",
+      "person": "p22",
+      "at": "2026-07-23",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b45",
+      "offer": "bundle",
+      "person": "p45",
+      "at": "2026-08-15"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b46",
+      "purchase": "purchase23",
+      "person": "p23",
+      "at": "2026-07-24",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b47",
+      "purchase": "purchase23",
+      "person": "p23",
+      "at": "2026-07-24",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b48",
+      "purchase": "purchase24",
+      "person": "p24",
+      "at": "2026-07-25",
+      "items": {
+        "sku0": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r48",
+      "basket": "b48",
+      "product": "sku0",
+      "count": 1,
+      "at": "2026-07-30"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b49",
+      "purchase": "purchase24",
+      "person": "p24",
+      "at": "2026-07-25",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku1"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b50",
+      "purchase": "purchase25",
+      "person": "p25",
+      "at": "2026-07-26",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b51",
+      "purchase": "purchase25",
+      "person": "p25",
+      "at": "2026-07-26",
+      "items": {
+        "sku3": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b52",
+      "purchase": "purchase26",
+      "person": "p26",
+      "at": "2026-07-27",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b53",
+      "purchase": "purchase26",
+      "person": "p26",
+      "at": "2026-07-27",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b54",
+      "offer": "bundle",
+      "person": "p54",
+      "at": "2026-08-24"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b55",
+      "purchase": "purchase27",
+      "person": "p27",
+      "at": "2026-07-28",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b56",
+      "purchase": "purchase28",
+      "person": "p28",
+      "at": "2026-07-29",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku8"
+      ]
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r56",
+      "basket": "b56",
+      "product": "sku8",
+      "count": 1,
+      "at": "2026-08-03"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b57",
+      "purchase": "purchase28",
+      "person": "p28",
+      "at": "2026-07-29",
+      "items": {
+        "sku9": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b58",
+      "purchase": "purchase29",
+      "person": "p29",
+      "at": "2026-07-30",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b59",
+      "purchase": "purchase29",
+      "person": "p29",
+      "at": "2026-07-30",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b60",
+      "purchase": "purchase30",
+      "person": "p30",
+      "at": "2026-07-31",
+      "items": {
+        "sku0": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b61",
+      "purchase": "purchase30",
+      "person": "p30",
+      "at": "2026-07-31",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b62",
+      "purchase": "purchase31",
+      "person": "p31",
+      "at": "2026-08-01",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b63",
+      "offer": "bundle",
+      "person": "p63",
+      "at": "2026-09-02"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b64",
+      "purchase": "purchase32",
+      "person": "p32",
+      "at": "2026-08-02",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r64",
+      "basket": "b64",
+      "product": "sku4",
+      "count": 1,
+      "at": "2026-08-07"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b65",
+      "purchase": "purchase32",
+      "person": "p32",
+      "at": "2026-08-02",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b66",
+      "purchase": "purchase33",
+      "person": "p33",
+      "at": "2026-08-03",
+      "items": {
+        "sku6": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b67",
+      "purchase": "purchase33",
+      "person": "p33",
+      "at": "2026-08-03",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b68",
+      "purchase": "purchase34",
+      "person": "p34",
+      "at": "2026-08-04",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b69",
+      "purchase": "purchase34",
+      "person": "p34",
+      "at": "2026-08-04",
+      "items": {
+        "sku9": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b70",
+      "purchase": "purchase35",
+      "person": "p35",
+      "at": "2026-08-05",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku10"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b71",
+      "purchase": "purchase35",
+      "person": "p35",
+      "at": "2026-08-05",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b72",
+      "offer": "bundle",
+      "person": "p72",
+      "at": "2026-09-11"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b73",
+      "purchase": "purchase36",
+      "person": "p36",
+      "at": "2026-08-06",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b74",
+      "purchase": "purchase37",
+      "person": "p37",
+      "at": "2026-08-07",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b75",
+      "purchase": "purchase37",
+      "person": "p37",
+      "at": "2026-08-07",
+      "items": {
+        "sku3": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b76",
+      "purchase": "purchase38",
+      "person": "p38",
+      "at": "2026-08-08",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b77",
+      "purchase": "purchase38",
+      "person": "p38",
+      "at": "2026-08-08",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku5"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b78",
+      "purchase": "purchase39",
+      "person": "p39",
+      "at": "2026-08-09",
+      "items": {
+        "sku6": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b79",
+      "purchase": "purchase39",
+      "person": "p39",
+      "at": "2026-08-09",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b80",
+      "purchase": "purchase40",
+      "person": "p40",
+      "at": "2026-08-10",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r80",
+      "basket": "b80",
+      "product": "sku8",
+      "count": 1,
+      "at": "2026-08-15"
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b81",
+      "offer": "bundle",
+      "person": "p81",
+      "at": "2026-09-20"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b82",
+      "purchase": "purchase41",
+      "person": "p41",
+      "at": "2026-08-11",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b83",
+      "purchase": "purchase41",
+      "person": "p41",
+      "at": "2026-08-11",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b84",
+      "purchase": "purchase42",
+      "person": "p42",
+      "at": "2026-08-12",
+      "items": {
+        "sku0": 1,
+        "sku1": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku0"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b85",
+      "purchase": "purchase42",
+      "person": "p42",
+      "at": "2026-08-12",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b86",
+      "purchase": "purchase43",
+      "person": "p43",
+      "at": "2026-08-13",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b87",
+      "purchase": "purchase43",
+      "person": "p43",
+      "at": "2026-08-13",
+      "items": {
+        "sku3": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b88",
+      "purchase": "purchase44",
+      "person": "p44",
+      "at": "2026-08-14",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r88",
+      "basket": "b88",
+      "product": "sku4",
+      "count": 1,
+      "at": "2026-08-19"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b89",
+      "purchase": "purchase44",
+      "person": "p44",
+      "at": "2026-08-14",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b90",
+      "offer": "bundle",
+      "person": "p0",
+      "at": "2026-07-07"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b91",
+      "purchase": "purchase45",
+      "person": "p45",
+      "at": "2026-08-15",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku7"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b92",
+      "purchase": "purchase46",
+      "person": "p46",
+      "at": "2026-08-16",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b93",
+      "purchase": "purchase46",
+      "person": "p46",
+      "at": "2026-08-16",
+      "items": {
+        "sku9": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b94",
+      "purchase": "purchase47",
+      "person": "p47",
+      "at": "2026-08-17",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b95",
+      "purchase": "purchase47",
+      "person": "p47",
+      "at": "2026-08-17",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b96",
+      "purchase": "purchase48",
+      "person": "p48",
+      "at": "2026-08-18",
+      "items": {
+        "sku0": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r96",
+      "basket": "b96",
+      "product": "sku0",
+      "count": 1,
+      "at": "2026-08-23"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b97",
+      "purchase": "purchase48",
+      "person": "p48",
+      "at": "2026-08-18",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b98",
+      "purchase": "purchase49",
+      "person": "p49",
+      "at": "2026-08-19",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku2"
+      ]
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b99",
+      "offer": "bundle",
+      "person": "p9",
+      "at": "2026-07-16"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b100",
+      "purchase": "purchase50",
+      "person": "p50",
+      "at": "2026-08-20",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b101",
+      "purchase": "purchase50",
+      "person": "p50",
+      "at": "2026-08-20",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b102",
+      "purchase": "purchase51",
+      "person": "p51",
+      "at": "2026-08-21",
+      "items": {
+        "sku6": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b103",
+      "purchase": "purchase51",
+      "person": "p51",
+      "at": "2026-08-21",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b104",
+      "purchase": "purchase52",
+      "person": "p52",
+      "at": "2026-08-22",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r104",
+      "basket": "b104",
+      "product": "sku8",
+      "count": 1,
+      "at": "2026-08-27"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b105",
+      "purchase": "purchase52",
+      "person": "p52",
+      "at": "2026-08-22",
+      "items": {
+        "sku9": 1,
+        "sku11": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku9"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b106",
+      "purchase": "purchase53",
+      "person": "p53",
+      "at": "2026-08-23",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b107",
+      "purchase": "purchase53",
+      "person": "p53",
+      "at": "2026-08-23",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b108",
+      "offer": "bundle",
+      "person": "p18",
+      "at": "2026-07-25"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b109",
+      "purchase": "purchase54",
+      "person": "p54",
+      "at": "2026-08-24",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b110",
+      "purchase": "purchase55",
+      "person": "p55",
+      "at": "2026-08-25",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b111",
+      "purchase": "purchase55",
+      "person": "p55",
+      "at": "2026-08-25",
+      "items": {
+        "sku3": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b112",
+      "purchase": "purchase56",
+      "person": "p56",
+      "at": "2026-08-26",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku4"
+      ]
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r112",
+      "basket": "b112",
+      "product": "sku4",
+      "count": 1,
+      "at": "2026-08-31"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b113",
+      "purchase": "purchase56",
+      "person": "p56",
+      "at": "2026-08-26",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b114",
+      "purchase": "purchase57",
+      "person": "p57",
+      "at": "2026-08-27",
+      "items": {
+        "sku6": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b115",
+      "purchase": "purchase57",
+      "person": "p57",
+      "at": "2026-08-27",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b116",
+      "purchase": "purchase58",
+      "person": "p58",
+      "at": "2026-08-28",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b117",
+      "offer": "bundle",
+      "person": "p27",
+      "at": "2026-08-03"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b118",
+      "purchase": "purchase59",
+      "person": "p59",
+      "at": "2026-08-29",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b119",
+      "purchase": "purchase59",
+      "person": "p59",
+      "at": "2026-08-29",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku11"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b120",
+      "purchase": "purchase60",
+      "person": "p60",
+      "at": "2026-08-30",
+      "items": {
+        "sku0": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r120",
+      "basket": "b120",
+      "product": "sku0",
+      "count": 1,
+      "at": "2026-09-04"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b121",
+      "purchase": "purchase60",
+      "person": "p60",
+      "at": "2026-08-30",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b122",
+      "purchase": "purchase61",
+      "person": "p61",
+      "at": "2026-08-31",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b123",
+      "purchase": "purchase61",
+      "person": "p61",
+      "at": "2026-08-31",
+      "items": {
+        "sku3": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b124",
+      "purchase": "purchase62",
+      "person": "p62",
+      "at": "2026-09-01",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b125",
+      "purchase": "purchase62",
+      "person": "p62",
+      "at": "2026-09-01",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b126",
+      "offer": "bundle",
+      "person": "p36",
+      "at": "2026-08-12"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b127",
+      "purchase": "purchase63",
+      "person": "p63",
+      "at": "2026-09-02",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b128",
+      "purchase": "purchase64",
+      "person": "p64",
+      "at": "2026-09-03",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r128",
+      "basket": "b128",
+      "product": "sku8",
+      "count": 1,
+      "at": "2026-09-08"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b129",
+      "purchase": "purchase64",
+      "person": "p64",
+      "at": "2026-09-03",
+      "items": {
+        "sku9": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b130",
+      "purchase": "purchase65",
+      "person": "p65",
+      "at": "2026-09-04",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b131",
+      "purchase": "purchase65",
+      "person": "p65",
+      "at": "2026-09-04",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b132",
+      "purchase": "purchase66",
+      "person": "p66",
+      "at": "2026-09-05",
+      "items": {
+        "sku0": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b133",
+      "purchase": "purchase66",
+      "person": "p66",
+      "at": "2026-09-05",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku1"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b134",
+      "purchase": "purchase67",
+      "person": "p67",
+      "at": "2026-09-06",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b135",
+      "offer": "bundle",
+      "person": "p45",
+      "at": "2026-08-21"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b136",
+      "purchase": "purchase68",
+      "person": "p68",
+      "at": "2026-09-07",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r136",
+      "basket": "b136",
+      "product": "sku4",
+      "count": 1,
+      "at": "2026-09-12"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b137",
+      "purchase": "purchase68",
+      "person": "p68",
+      "at": "2026-09-07",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b138",
+      "purchase": "purchase69",
+      "person": "p69",
+      "at": "2026-09-08",
+      "items": {
+        "sku6": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b139",
+      "purchase": "purchase69",
+      "person": "p69",
+      "at": "2026-09-08",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b140",
+      "purchase": "purchase70",
+      "person": "p70",
+      "at": "2026-09-09",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku8"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b141",
+      "purchase": "purchase70",
+      "person": "p70",
+      "at": "2026-09-09",
+      "items": {
+        "sku9": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b142",
+      "purchase": "purchase71",
+      "person": "p71",
+      "at": "2026-09-10",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b143",
+      "purchase": "purchase71",
+      "person": "p71",
+      "at": "2026-09-10",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b144",
+      "offer": "bundle",
+      "person": "p54",
+      "at": "2026-08-30"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b145",
+      "purchase": "purchase72",
+      "person": "p72",
+      "at": "2026-09-11",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b146",
+      "purchase": "purchase73",
+      "person": "p73",
+      "at": "2026-09-12",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b147",
+      "purchase": "purchase73",
+      "person": "p73",
+      "at": "2026-09-12",
+      "items": {
+        "sku3": 1,
+        "sku7": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku3"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b148",
+      "purchase": "purchase74",
+      "person": "p74",
+      "at": "2026-09-13",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b149",
+      "purchase": "purchase74",
+      "person": "p74",
+      "at": "2026-09-13",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b150",
+      "purchase": "purchase75",
+      "person": "p75",
+      "at": "2026-09-14",
+      "items": {
+        "sku6": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b151",
+      "purchase": "purchase75",
+      "person": "p75",
+      "at": "2026-09-14",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b152",
+      "purchase": "purchase76",
+      "person": "p76",
+      "at": "2026-09-15",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r152",
+      "basket": "b152",
+      "product": "sku8",
+      "count": 1,
+      "at": "2026-09-20"
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b153",
+      "offer": "bundle",
+      "person": "p63",
+      "at": "2026-09-08"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b154",
+      "purchase": "purchase77",
+      "person": "p77",
+      "at": "2026-09-16",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku10"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b155",
+      "purchase": "purchase77",
+      "person": "p77",
+      "at": "2026-09-16",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b156",
+      "purchase": "purchase78",
+      "person": "p78",
+      "at": "2026-09-17",
+      "items": {
+        "sku0": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b157",
+      "purchase": "purchase78",
+      "person": "p78",
+      "at": "2026-09-17",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b158",
+      "purchase": "purchase79",
+      "person": "p79",
+      "at": "2026-09-18",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b159",
+      "purchase": "purchase79",
+      "person": "p79",
+      "at": "2026-09-18",
+      "items": {
+        "sku3": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b160",
+      "purchase": "purchase80",
+      "person": "p80",
+      "at": "2026-09-19",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r160",
+      "basket": "b160",
+      "product": "sku4",
+      "count": 1,
+      "at": "2026-09-24"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b161",
+      "purchase": "purchase80",
+      "person": "p80",
+      "at": "2026-09-19",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku5"
+      ]
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b162",
+      "offer": "bundle",
+      "person": "p72",
+      "at": "2026-09-17"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b163",
+      "purchase": "purchase81",
+      "person": "p81",
+      "at": "2026-09-20",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b164",
+      "purchase": "purchase82",
+      "person": "p82",
+      "at": "2026-09-21",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b165",
+      "purchase": "purchase82",
+      "person": "p82",
+      "at": "2026-09-21",
+      "items": {
+        "sku9": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b166",
+      "purchase": "purchase83",
+      "person": "p83",
+      "at": "2026-09-22",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b167",
+      "purchase": "purchase83",
+      "person": "p83",
+      "at": "2026-09-22",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b168",
+      "purchase": "purchase84",
+      "person": "p84",
+      "at": "2026-07-01",
+      "items": {
+        "sku0": 1,
+        "sku1": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku0"
+      ]
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r168",
+      "basket": "b168",
+      "product": "sku0",
+      "count": 1,
+      "at": "2026-07-06"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b169",
+      "purchase": "purchase84",
+      "person": "p84",
+      "at": "2026-07-01",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b170",
+      "purchase": "purchase85",
+      "person": "p85",
+      "at": "2026-07-02",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b171",
+      "offer": "bundle",
+      "person": "p81",
+      "at": "2026-07-04"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b172",
+      "purchase": "purchase86",
+      "person": "p86",
+      "at": "2026-07-03",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b173",
+      "purchase": "purchase86",
+      "person": "p86",
+      "at": "2026-07-03",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b174",
+      "purchase": "purchase87",
+      "person": "p87",
+      "at": "2026-07-04",
+      "items": {
+        "sku6": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b175",
+      "purchase": "purchase87",
+      "person": "p87",
+      "at": "2026-07-04",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku7"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b176",
+      "purchase": "purchase88",
+      "person": "p88",
+      "at": "2026-07-05",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r176",
+      "basket": "b176",
+      "product": "sku8",
+      "count": 1,
+      "at": "2026-07-10"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b177",
+      "purchase": "purchase88",
+      "person": "p88",
+      "at": "2026-07-05",
+      "items": {
+        "sku9": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b178",
+      "purchase": "purchase89",
+      "person": "p89",
+      "at": "2026-07-06",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b179",
+      "purchase": "purchase89",
+      "person": "p89",
+      "at": "2026-07-06",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b180",
+      "offer": "bundle",
+      "person": "p0",
+      "at": "2026-07-13"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b181",
+      "purchase": "purchase90",
+      "person": "p0",
+      "at": "2026-07-07",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b182",
+      "purchase": "purchase91",
+      "person": "p1",
+      "at": "2026-07-08",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku2"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b183",
+      "purchase": "purchase91",
+      "person": "p1",
+      "at": "2026-07-08",
+      "items": {
+        "sku3": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b184",
+      "purchase": "purchase92",
+      "person": "p2",
+      "at": "2026-07-09",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r184",
+      "basket": "b184",
+      "product": "sku4",
+      "count": 1,
+      "at": "2026-07-14"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b185",
+      "purchase": "purchase92",
+      "person": "p2",
+      "at": "2026-07-09",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b186",
+      "purchase": "purchase93",
+      "person": "p3",
+      "at": "2026-07-10",
+      "items": {
+        "sku6": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b187",
+      "purchase": "purchase93",
+      "person": "p3",
+      "at": "2026-07-10",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b188",
+      "purchase": "purchase94",
+      "person": "p4",
+      "at": "2026-07-11",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b189",
+      "offer": "bundle",
+      "person": "p9",
+      "at": "2026-07-22"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b190",
+      "purchase": "purchase95",
+      "person": "p5",
+      "at": "2026-07-12",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b191",
+      "purchase": "purchase95",
+      "person": "p5",
+      "at": "2026-07-12",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b192",
+      "purchase": "purchase96",
+      "person": "p6",
+      "at": "2026-07-13",
+      "items": {
+        "sku0": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r192",
+      "basket": "b192",
+      "product": "sku0",
+      "count": 1,
+      "at": "2026-07-18"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b193",
+      "purchase": "purchase96",
+      "person": "p6",
+      "at": "2026-07-13",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b194",
+      "purchase": "purchase97",
+      "person": "p7",
+      "at": "2026-07-14",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b195",
+      "purchase": "purchase97",
+      "person": "p7",
+      "at": "2026-07-14",
+      "items": {
+        "sku3": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b196",
+      "purchase": "purchase98",
+      "person": "p8",
+      "at": "2026-07-15",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku4"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b197",
+      "purchase": "purchase98",
+      "person": "p8",
+      "at": "2026-07-15",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b198",
+      "offer": "bundle",
+      "person": "p18",
+      "at": "2026-07-31"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b199",
+      "purchase": "purchase99",
+      "person": "p9",
+      "at": "2026-07-16",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b200",
+      "purchase": "purchase100",
+      "person": "p10",
+      "at": "2026-07-17",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r200",
+      "basket": "b200",
+      "product": "sku8",
+      "count": 1,
+      "at": "2026-07-22"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b201",
+      "purchase": "purchase100",
+      "person": "p10",
+      "at": "2026-07-17",
+      "items": {
+        "sku9": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b202",
+      "purchase": "purchase101",
+      "person": "p11",
+      "at": "2026-07-18",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b203",
+      "purchase": "purchase101",
+      "person": "p11",
+      "at": "2026-07-18",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku11"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b204",
+      "purchase": "purchase102",
+      "person": "p12",
+      "at": "2026-07-19",
+      "items": {
+        "sku0": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b205",
+      "purchase": "purchase102",
+      "person": "p12",
+      "at": "2026-07-19",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b206",
+      "purchase": "purchase103",
+      "person": "p13",
+      "at": "2026-07-20",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b207",
+      "offer": "bundle",
+      "person": "p27",
+      "at": "2026-08-09"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b208",
+      "purchase": "purchase104",
+      "person": "p14",
+      "at": "2026-07-21",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r208",
+      "basket": "b208",
+      "product": "sku4",
+      "count": 1,
+      "at": "2026-07-26"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b209",
+      "purchase": "purchase104",
+      "person": "p14",
+      "at": "2026-07-21",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b210",
+      "purchase": "purchase105",
+      "person": "p15",
+      "at": "2026-07-22",
+      "items": {
+        "sku6": 1,
+        "sku9": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku6"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b211",
+      "purchase": "purchase105",
+      "person": "p15",
+      "at": "2026-07-22",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b212",
+      "purchase": "purchase106",
+      "person": "p16",
+      "at": "2026-07-23",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b213",
+      "purchase": "purchase106",
+      "person": "p16",
+      "at": "2026-07-23",
+      "items": {
+        "sku9": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b214",
+      "purchase": "purchase107",
+      "person": "p17",
+      "at": "2026-07-24",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b215",
+      "purchase": "purchase107",
+      "person": "p17",
+      "at": "2026-07-24",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b216",
+      "offer": "bundle",
+      "person": "p36",
+      "at": "2026-08-18"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b217",
+      "purchase": "purchase108",
+      "person": "p18",
+      "at": "2026-07-25",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku1"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b218",
+      "purchase": "purchase109",
+      "person": "p19",
+      "at": "2026-07-26",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b219",
+      "purchase": "purchase109",
+      "person": "p19",
+      "at": "2026-07-26",
+      "items": {
+        "sku3": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b220",
+      "purchase": "purchase110",
+      "person": "p20",
+      "at": "2026-07-27",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b221",
+      "purchase": "purchase110",
+      "person": "p20",
+      "at": "2026-07-27",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b222",
+      "purchase": "purchase111",
+      "person": "p21",
+      "at": "2026-07-28",
+      "items": {
+        "sku6": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b223",
+      "purchase": "purchase111",
+      "person": "p21",
+      "at": "2026-07-28",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b224",
+      "purchase": "purchase112",
+      "person": "p22",
+      "at": "2026-07-29",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku8"
+      ]
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r224",
+      "basket": "b224",
+      "product": "sku8",
+      "count": 1,
+      "at": "2026-08-03"
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b225",
+      "offer": "bundle",
+      "person": "p45",
+      "at": "2026-08-27"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b226",
+      "purchase": "purchase113",
+      "person": "p23",
+      "at": "2026-07-30",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b227",
+      "purchase": "purchase113",
+      "person": "p23",
+      "at": "2026-07-30",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b228",
+      "purchase": "purchase114",
+      "person": "p24",
+      "at": "2026-07-31",
+      "items": {
+        "sku0": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b229",
+      "purchase": "purchase114",
+      "person": "p24",
+      "at": "2026-07-31",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b230",
+      "purchase": "purchase115",
+      "person": "p25",
+      "at": "2026-08-01",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b231",
+      "purchase": "purchase115",
+      "person": "p25",
+      "at": "2026-08-01",
+      "items": {
+        "sku3": 1,
+        "sku7": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku3"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b232",
+      "purchase": "purchase116",
+      "person": "p26",
+      "at": "2026-08-02",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r232",
+      "basket": "b232",
+      "product": "sku4",
+      "count": 1,
+      "at": "2026-08-07"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b233",
+      "purchase": "purchase116",
+      "person": "p26",
+      "at": "2026-08-02",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b234",
+      "offer": "bundle",
+      "person": "p54",
+      "at": "2026-09-05"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b235",
+      "purchase": "purchase117",
+      "person": "p27",
+      "at": "2026-08-03",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b236",
+      "purchase": "purchase118",
+      "person": "p28",
+      "at": "2026-08-04",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b237",
+      "purchase": "purchase118",
+      "person": "p28",
+      "at": "2026-08-04",
+      "items": {
+        "sku9": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b238",
+      "purchase": "purchase119",
+      "person": "p29",
+      "at": "2026-08-05",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku10"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b239",
+      "purchase": "purchase119",
+      "person": "p29",
+      "at": "2026-08-05",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b240",
+      "purchase": "purchase120",
+      "person": "p30",
+      "at": "2026-08-06",
+      "items": {
+        "sku0": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r240",
+      "basket": "b240",
+      "product": "sku0",
+      "count": 1,
+      "at": "2026-08-11"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b241",
+      "purchase": "purchase120",
+      "person": "p30",
+      "at": "2026-08-06",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b242",
+      "purchase": "purchase121",
+      "person": "p31",
+      "at": "2026-08-07",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b243",
+      "offer": "bundle",
+      "person": "p63",
+      "at": "2026-09-14"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b244",
+      "purchase": "purchase122",
+      "person": "p32",
+      "at": "2026-08-08",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b245",
+      "purchase": "purchase122",
+      "person": "p32",
+      "at": "2026-08-08",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku5"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b246",
+      "purchase": "purchase123",
+      "person": "p33",
+      "at": "2026-08-09",
+      "items": {
+        "sku6": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b247",
+      "purchase": "purchase123",
+      "person": "p33",
+      "at": "2026-08-09",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b248",
+      "purchase": "purchase124",
+      "person": "p34",
+      "at": "2026-08-10",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r248",
+      "basket": "b248",
+      "product": "sku8",
+      "count": 1,
+      "at": "2026-08-15"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b249",
+      "purchase": "purchase124",
+      "person": "p34",
+      "at": "2026-08-10",
+      "items": {
+        "sku9": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b250",
+      "purchase": "purchase125",
+      "person": "p35",
+      "at": "2026-08-11",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b251",
+      "purchase": "purchase125",
+      "person": "p35",
+      "at": "2026-08-11",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b252",
+      "offer": "bundle",
+      "person": "p72",
+      "at": "2026-07-01"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b253",
+      "purchase": "purchase126",
+      "person": "p36",
+      "at": "2026-08-12",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b254",
+      "purchase": "purchase127",
+      "person": "p37",
+      "at": "2026-08-13",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b255",
+      "purchase": "purchase127",
+      "person": "p37",
+      "at": "2026-08-13",
+      "items": {
+        "sku3": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b256",
+      "purchase": "purchase128",
+      "person": "p38",
+      "at": "2026-08-14",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r256",
+      "basket": "b256",
+      "product": "sku4",
+      "count": 1,
+      "at": "2026-08-19"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b257",
+      "purchase": "purchase128",
+      "person": "p38",
+      "at": "2026-08-14",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b258",
+      "purchase": "purchase129",
+      "person": "p39",
+      "at": "2026-08-15",
+      "items": {
+        "sku6": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b259",
+      "purchase": "purchase129",
+      "person": "p39",
+      "at": "2026-08-15",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku7"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b260",
+      "purchase": "purchase130",
+      "person": "p40",
+      "at": "2026-08-16",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b261",
+      "offer": "bundle",
+      "person": "p81",
+      "at": "2026-07-10"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b262",
+      "purchase": "purchase131",
+      "person": "p41",
+      "at": "2026-08-17",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b263",
+      "purchase": "purchase131",
+      "person": "p41",
+      "at": "2026-08-17",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b264",
+      "purchase": "purchase132",
+      "person": "p42",
+      "at": "2026-08-18",
+      "items": {
+        "sku0": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r264",
+      "basket": "b264",
+      "product": "sku0",
+      "count": 1,
+      "at": "2026-08-23"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b265",
+      "purchase": "purchase132",
+      "person": "p42",
+      "at": "2026-08-18",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b266",
+      "purchase": "purchase133",
+      "person": "p43",
+      "at": "2026-08-19",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku2"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b267",
+      "purchase": "purchase133",
+      "person": "p43",
+      "at": "2026-08-19",
+      "items": {
+        "sku3": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b268",
+      "purchase": "purchase134",
+      "person": "p44",
+      "at": "2026-08-20",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b269",
+      "purchase": "purchase134",
+      "person": "p44",
+      "at": "2026-08-20",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b270",
+      "offer": "bundle",
+      "person": "p0",
+      "at": "2026-07-19"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b271",
+      "purchase": "purchase135",
+      "person": "p45",
+      "at": "2026-08-21",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b272",
+      "purchase": "purchase136",
+      "person": "p46",
+      "at": "2026-08-22",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r272",
+      "basket": "b272",
+      "product": "sku8",
+      "count": 1,
+      "at": "2026-08-27"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b273",
+      "purchase": "purchase136",
+      "person": "p46",
+      "at": "2026-08-22",
+      "items": {
+        "sku9": 1,
+        "sku11": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku9"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b274",
+      "purchase": "purchase137",
+      "person": "p47",
+      "at": "2026-08-23",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b275",
+      "purchase": "purchase137",
+      "person": "p47",
+      "at": "2026-08-23",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b276",
+      "purchase": "purchase138",
+      "person": "p48",
+      "at": "2026-08-24",
+      "items": {
+        "sku0": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b277",
+      "purchase": "purchase138",
+      "person": "p48",
+      "at": "2026-08-24",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b278",
+      "purchase": "purchase139",
+      "person": "p49",
+      "at": "2026-08-25",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b279",
+      "offer": "bundle",
+      "person": "p9",
+      "at": "2026-07-28"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b280",
+      "purchase": "purchase140",
+      "person": "p50",
+      "at": "2026-08-26",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku4"
+      ]
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r280",
+      "basket": "b280",
+      "product": "sku4",
+      "count": 1,
+      "at": "2026-08-31"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b281",
+      "purchase": "purchase140",
+      "person": "p50",
+      "at": "2026-08-26",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b282",
+      "purchase": "purchase141",
+      "person": "p51",
+      "at": "2026-08-27",
+      "items": {
+        "sku6": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b283",
+      "purchase": "purchase141",
+      "person": "p51",
+      "at": "2026-08-27",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b284",
+      "purchase": "purchase142",
+      "person": "p52",
+      "at": "2026-08-28",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b285",
+      "purchase": "purchase142",
+      "person": "p52",
+      "at": "2026-08-28",
+      "items": {
+        "sku9": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b286",
+      "purchase": "purchase143",
+      "person": "p53",
+      "at": "2026-08-29",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b287",
+      "purchase": "purchase143",
+      "person": "p53",
+      "at": "2026-08-29",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku11"
+      ]
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b288",
+      "offer": "bundle",
+      "person": "p18",
+      "at": "2026-08-06"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b289",
+      "purchase": "purchase144",
+      "person": "p54",
+      "at": "2026-08-30",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b290",
+      "purchase": "purchase145",
+      "person": "p55",
+      "at": "2026-08-31",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b291",
+      "purchase": "purchase145",
+      "person": "p55",
+      "at": "2026-08-31",
+      "items": {
+        "sku3": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b292",
+      "purchase": "purchase146",
+      "person": "p56",
+      "at": "2026-09-01",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b293",
+      "purchase": "purchase146",
+      "person": "p56",
+      "at": "2026-09-01",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b294",
+      "purchase": "purchase147",
+      "person": "p57",
+      "at": "2026-09-02",
+      "items": {
+        "sku6": 1,
+        "sku9": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku6"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b295",
+      "purchase": "purchase147",
+      "person": "p57",
+      "at": "2026-09-02",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b296",
+      "purchase": "purchase148",
+      "person": "p58",
+      "at": "2026-09-03",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r296",
+      "basket": "b296",
+      "product": "sku8",
+      "count": 1,
+      "at": "2026-09-08"
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b297",
+      "offer": "bundle",
+      "person": "p27",
+      "at": "2026-08-15"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b298",
+      "purchase": "purchase149",
+      "person": "p59",
+      "at": "2026-09-04",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b299",
+      "purchase": "purchase149",
+      "person": "p59",
+      "at": "2026-09-04",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b300",
+      "purchase": "purchase150",
+      "person": "p60",
+      "at": "2026-09-05",
+      "items": {
+        "sku0": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b301",
+      "purchase": "purchase150",
+      "person": "p60",
+      "at": "2026-09-05",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku1"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b302",
+      "purchase": "purchase151",
+      "person": "p61",
+      "at": "2026-09-06",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b303",
+      "purchase": "purchase151",
+      "person": "p61",
+      "at": "2026-09-06",
+      "items": {
+        "sku3": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b304",
+      "purchase": "purchase152",
+      "person": "p62",
+      "at": "2026-09-07",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r304",
+      "basket": "b304",
+      "product": "sku4",
+      "count": 1,
+      "at": "2026-09-12"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b305",
+      "purchase": "purchase152",
+      "person": "p62",
+      "at": "2026-09-07",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b306",
+      "offer": "bundle",
+      "person": "p36",
+      "at": "2026-08-24"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b307",
+      "purchase": "purchase153",
+      "person": "p63",
+      "at": "2026-09-08",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b308",
+      "purchase": "purchase154",
+      "person": "p64",
+      "at": "2026-09-09",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku8"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b309",
+      "purchase": "purchase154",
+      "person": "p64",
+      "at": "2026-09-09",
+      "items": {
+        "sku9": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b310",
+      "purchase": "purchase155",
+      "person": "p65",
+      "at": "2026-09-10",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b311",
+      "purchase": "purchase155",
+      "person": "p65",
+      "at": "2026-09-10",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b312",
+      "purchase": "purchase156",
+      "person": "p66",
+      "at": "2026-09-11",
+      "items": {
+        "sku0": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r312",
+      "basket": "b312",
+      "product": "sku0",
+      "count": 1,
+      "at": "2026-09-16"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b313",
+      "purchase": "purchase156",
+      "person": "p66",
+      "at": "2026-09-11",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b314",
+      "purchase": "purchase157",
+      "person": "p67",
+      "at": "2026-09-12",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b315",
+      "offer": "bundle",
+      "person": "p45",
+      "at": "2026-09-02"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b316",
+      "purchase": "purchase158",
+      "person": "p68",
+      "at": "2026-09-13",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b317",
+      "purchase": "purchase158",
+      "person": "p68",
+      "at": "2026-09-13",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b318",
+      "purchase": "purchase159",
+      "person": "p69",
+      "at": "2026-09-14",
+      "items": {
+        "sku6": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b319",
+      "purchase": "purchase159",
+      "person": "p69",
+      "at": "2026-09-14",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b320",
+      "purchase": "purchase160",
+      "person": "p70",
+      "at": "2026-09-15",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r320",
+      "basket": "b320",
+      "product": "sku8",
+      "count": 1,
+      "at": "2026-09-20"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b321",
+      "purchase": "purchase160",
+      "person": "p70",
+      "at": "2026-09-15",
+      "items": {
+        "sku9": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b322",
+      "purchase": "purchase161",
+      "person": "p71",
+      "at": "2026-09-16",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku10"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b323",
+      "purchase": "purchase161",
+      "person": "p71",
+      "at": "2026-09-16",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b324",
+      "offer": "bundle",
+      "person": "p54",
+      "at": "2026-09-11"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b325",
+      "purchase": "purchase162",
+      "person": "p72",
+      "at": "2026-09-17",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b326",
+      "purchase": "purchase163",
+      "person": "p73",
+      "at": "2026-09-18",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b327",
+      "purchase": "purchase163",
+      "person": "p73",
+      "at": "2026-09-18",
+      "items": {
+        "sku3": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b328",
+      "purchase": "purchase164",
+      "person": "p74",
+      "at": "2026-09-19",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r328",
+      "basket": "b328",
+      "product": "sku4",
+      "count": 1,
+      "at": "2026-09-24"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b329",
+      "purchase": "purchase164",
+      "person": "p74",
+      "at": "2026-09-19",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku5"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b330",
+      "purchase": "purchase165",
+      "person": "p75",
+      "at": "2026-09-20",
+      "items": {
+        "sku6": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b331",
+      "purchase": "purchase165",
+      "person": "p75",
+      "at": "2026-09-20",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b332",
+      "purchase": "purchase166",
+      "person": "p76",
+      "at": "2026-09-21",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b333",
+      "offer": "bundle",
+      "person": "p63",
+      "at": "2026-09-20"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b334",
+      "purchase": "purchase167",
+      "person": "p77",
+      "at": "2026-09-22",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b335",
+      "purchase": "purchase167",
+      "person": "p77",
+      "at": "2026-09-22",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b336",
+      "purchase": "purchase168",
+      "person": "p78",
+      "at": "2026-07-01",
+      "items": {
+        "sku0": 1,
+        "sku1": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku0"
+      ]
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r336",
+      "basket": "b336",
+      "product": "sku0",
+      "count": 1,
+      "at": "2026-07-06"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b337",
+      "purchase": "purchase168",
+      "person": "p78",
+      "at": "2026-07-01",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b338",
+      "purchase": "purchase169",
+      "person": "p79",
+      "at": "2026-07-02",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b339",
+      "purchase": "purchase169",
+      "person": "p79",
+      "at": "2026-07-02",
+      "items": {
+        "sku3": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b340",
+      "purchase": "purchase170",
+      "person": "p80",
+      "at": "2026-07-03",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b341",
+      "purchase": "purchase170",
+      "person": "p80",
+      "at": "2026-07-03",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b342",
+      "offer": "bundle",
+      "person": "p72",
+      "at": "2026-07-07"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b343",
+      "purchase": "purchase171",
+      "person": "p81",
+      "at": "2026-07-04",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku7"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b344",
+      "purchase": "purchase172",
+      "person": "p82",
+      "at": "2026-07-05",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r344",
+      "basket": "b344",
+      "product": "sku8",
+      "count": 1,
+      "at": "2026-07-10"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b345",
+      "purchase": "purchase172",
+      "person": "p82",
+      "at": "2026-07-05",
+      "items": {
+        "sku9": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b346",
+      "purchase": "purchase173",
+      "person": "p83",
+      "at": "2026-07-06",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b347",
+      "purchase": "purchase173",
+      "person": "p83",
+      "at": "2026-07-06",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b348",
+      "purchase": "purchase174",
+      "person": "p84",
+      "at": "2026-07-07",
+      "items": {
+        "sku0": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b349",
+      "purchase": "purchase174",
+      "person": "p84",
+      "at": "2026-07-07",
+      "items": {
+        "sku1": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b350",
+      "purchase": "purchase175",
+      "person": "p85",
+      "at": "2026-07-08",
+      "items": {
+        "sku2": 1,
+        "sku5": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku2"
+      ]
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b351",
+      "offer": "bundle",
+      "person": "p81",
+      "at": "2026-07-16"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b352",
+      "purchase": "purchase176",
+      "person": "p86",
+      "at": "2026-07-09",
+      "items": {
+        "sku4": 1,
+        "sku5": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r352",
+      "basket": "b352",
+      "product": "sku4",
+      "count": 1,
+      "at": "2026-07-14"
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b353",
+      "purchase": "purchase176",
+      "person": "p86",
+      "at": "2026-07-09",
+      "items": {
+        "sku5": 1,
+        "sku7": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b354",
+      "purchase": "purchase177",
+      "person": "p87",
+      "at": "2026-07-10",
+      "items": {
+        "sku6": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b355",
+      "purchase": "purchase177",
+      "person": "p87",
+      "at": "2026-07-10",
+      "items": {
+        "sku7": 1,
+        "sku11": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b356",
+      "purchase": "purchase178",
+      "person": "p88",
+      "at": "2026-07-11",
+      "items": {
+        "sku8": 1,
+        "sku9": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b357",
+      "purchase": "purchase178",
+      "person": "p88",
+      "at": "2026-07-11",
+      "items": {
+        "sku9": 1,
+        "sku11": 1
+      },
+      "promotion": "gift-day",
+      "gifts": [
+        "sku9"
+      ]
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b358",
+      "purchase": "purchase179",
+      "person": "p89",
+      "at": "2026-07-12",
+      "items": {
+        "sku10": 1,
+        "sku1": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b359",
+      "purchase": "purchase179",
+      "person": "p89",
+      "at": "2026-07-12",
+      "items": {
+        "sku11": 1,
+        "sku3": 1
+      },
+      "promotion": null,
+      "gifts": []
+    }
+  ]
+]

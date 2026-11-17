@@ -1,0 +1,67 @@
+[
+  [
+    "inventory.stock",
+    {
+      "id": "shirt",
+      "count": 8,
+      "cost": 5000,
+      "price": 10000
+    }
+  ],
+  [
+    "inventory.stock",
+    {
+      "id": "scarf",
+      "count": 8,
+      "cost": 2000,
+      "price": 4000
+    }
+  ],
+  [
+    "baskets.close",
+    {
+      "id": "b1",
+      "purchase": "p1",
+      "person": "u1",
+      "at": "2026-10-17",
+      "items": {
+        "shirt": 1,
+        "scarf": 1
+      },
+      "gifts": [
+        "scarf"
+      ]
+    }
+  ],
+  [
+    "aftersales.refund",
+    {
+      "id": "r1",
+      "basket": "b1",
+      "product": "scarf",
+      "count": 1,
+      "at": "2026-10-18"
+    }
+  ],
+  [
+    "offers.create",
+    {
+      "id": "o1",
+      "items": [
+        "shirt",
+        "scarf"
+      ],
+      "discount": 1000,
+      "min_margin": 3000
+    }
+  ],
+  [
+    "offers.redeem",
+    {
+      "id": "b2",
+      "offer": "o1",
+      "person": "u2",
+      "at": "2026-10-19"
+    }
+  ]
+]
