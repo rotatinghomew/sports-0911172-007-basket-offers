@@ -7,12 +7,14 @@ from .inventory import Inventory
 from .baskets import Baskets
 from .aftersales import Aftersales
 from .offers import Offers
+from .association import Discovery
+from .trials import Trials
 
 
 class Application:
     def __init__(self, path=':memory:'):
         self.store=Store(path)
-        self.services={'inventory':Inventory(self.store),'baskets':Baskets(self.store),'aftersales':Aftersales(self.store),'offers':Offers(self.store)}
+        self.services={'inventory':Inventory(self.store),'baskets':Baskets(self.store),'aftersales':Aftersales(self.store),'offers':Offers(self.store),'discovery':Discovery(self.store),'trials':Trials(self.store)}
 
     def execute(self, command, arguments):
         service, separator, operation=command.partition('.')
@@ -30,9 +32,12 @@ class Application:
 
 def main():
     parser=argparse.ArgumentParser(description='赛事周边商品关联发现与可兑现组合优惠本地操作台')
-    parser.add_argument('action',choices=['demo','replay','inspect'])
+    parser.add_argument('action',choices=['demo','replay','inspect','discover'])
     parser.add_argument('--db',default=':memory:')
     parser.add_argument('--file',type=Path)
+    parser.add_argument('--history',type=Path,help='discover 使用的业务操作序列文件，默认 data/history.json')
+    parser.add_argument('--id',default='discovery-1',help='discover 写入的发现编号')
+    parser.add_argument('--min-support',type=int,default=5)
     args=parser.parse_args()
     app=Application(args.db)
     try:
@@ -43,6 +48,11 @@ def main():
             if args.file is None:
                 parser.error('replay 需要 --file')
             results=app.replay(json.loads(args.file.read_text()))
+        elif args.action=='discover':
+            history=args.history or (Path(__file__).parent.parent/'data'/'history.json')
+            app.replay(json.loads(history.read_text()))
+            results=[app.execute('discovery.run',
+                dict(id=args.id,min_support=args.min_support))]
         else:
             results=[]
         print(json.dumps(dict(results=results,state=app.store.snapshot()),ensure_ascii=False,indent=2))

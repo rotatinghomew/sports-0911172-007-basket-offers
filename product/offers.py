@@ -14,7 +14,7 @@ class Offers:
         return self.store.put('offer',id,dict(items=items,discount=discount,
             min_margin=min_margin,exclusive=exclusive,state='active'),create=True)
 
-    def redeem(self,id,offer,person,at,other_offer=None):
+    def redeem(self,id,offer,person,at,other_offer=None,trial=None):
         with self.store.atomic():
             record=self.store.get('offer',offer)
             require(record['state']=='active','优惠不可用')
@@ -30,5 +30,5 @@ class Offers:
                 remaining-=amount
             unit_cents[sorted(record['items'])[-1]]=remaining
             self.store.put('basket',id,dict(purchase=id,person=person,at=at,items={key:1 for key in record['items']},
-                gifts=[],promotion=offer,cents=cents,returned={},unit_cents=unit_cents),create=True)
-            return self.store.put('redemption',id,dict(offer=offer,basket=id,cents=cents),create=True)
+                gifts=[],promotion=offer,trial=trial,cents=cents,returned={},unit_cents=unit_cents),create=True)
+            return self.store.put('redemption',id,dict(offer=offer,basket=id,cents=cents,trial=trial),create=True)
